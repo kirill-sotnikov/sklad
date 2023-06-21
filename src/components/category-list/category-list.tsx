@@ -6,7 +6,8 @@ import style from "./category-list.module.css";
 
 export const CategoryList = () => {
   const router = useRouter();
-  const { value, add, currentCategory, setCurrentCategory } = useCategoryList();
+  const { value, add, currentCategory, setCurrentCategory, remove } =
+    useCategoryList();
 
   return (
     <div className={style.wrapper}>
@@ -16,6 +17,16 @@ export const CategoryList = () => {
         {value.map((item, index) => (
           <Category
             key={index}
+            category={item}
+            onRemove={(category) => {
+              remove(category);
+              localStorage.setItem(
+                "categoryList",
+                JSON.stringify({
+                  value: value.filter((item) => item !== category),
+                })
+              );
+            }}
             onClick={() => {
               setCurrentCategory(item);
             }}

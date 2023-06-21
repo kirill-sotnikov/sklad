@@ -14,3 +14,14 @@
 .category:hover {
   color: #0085ff;
 }
+
+.cross {
+  width: 40;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+.cross:hover {
+  color: #0085ff;
+  font-weight: 900;
+}
