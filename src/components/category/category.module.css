@@ -1,0 +1,16 @@
+.category {
+  padding: 1px 0;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  padding: 2px 0;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.category:hover {
+  color: #0085ff;
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 24px 82px;
+  margin-top: 8px;
+}
+
+.product_item {
+  width: 20%;
+  text-align: center;
+  padding: 0 10px;
+}

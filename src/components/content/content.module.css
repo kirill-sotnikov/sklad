@@ -1,0 +1,16 @@
+.wrapper {
+  flex-grow: 1;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  padding: 35px 104px;
+  justify-content: space-between;
+}
+
+.header_item {
+  width: 20%;
+  text-align: center;
+  padding: 0 10px;
+}

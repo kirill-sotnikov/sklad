@@ -1,0 +1,39 @@
+.wrapper {
+  height: 100vh;
+  width: 20%;
+  min-width: 200px;
+  max-width: 220px;
+  background-color: #f1f1f1;
+  border-right: 1px solid #abd6ff;
+  position: relative;
+}
+
+.logo {
+  height: 40px;
+  background-color: #0085ff;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.categoryList {
+  padding: 4px 25px;
+  overflow: auto;
+  height: calc(100vh - 40px);
+  padding-bottom: 200px;
+}
+
+.buttonsBlock {
+  position: absolute;
+  bottom: 0;
+  height: 110px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #abd6ff;
+  padding: 20px 15px;
+  width: 100%;
+}

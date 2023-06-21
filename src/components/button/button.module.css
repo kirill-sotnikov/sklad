@@ -1,0 +1,17 @@
+.btn {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #0085ff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #0085ff;
+  padding: 10px 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0085ff;
+  transition: 0.2s;
+  color: white;
+}
