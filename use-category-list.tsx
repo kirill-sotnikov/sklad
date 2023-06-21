@@ -41,11 +41,11 @@ export const CategoryListProvider = memo<PropsWithChildren>(({ children }) => {
   }, []);
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("categoryList"))
-      .value as Array<string>;
-    console.log(localStorage.getItem("categoryList"));
+    if (localStorage.getItem("categoryList")) {
+      const data = JSON.parse(localStorage.getItem("categoryList"))
+        .value as Array<string>;
+      console.log(localStorage.getItem("categoryList"));
 
-    if (data) {
       setValue(data);
     }
   }, []);
