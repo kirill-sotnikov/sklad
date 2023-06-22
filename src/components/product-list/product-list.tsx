@@ -8,6 +8,9 @@ interface ProductListProps {
   category: string;
 }
 
+/**
+ * Список товаром определенной категории
+ */
 export const ProductList = memo<ProductListProps>(({ category }) => {
   const [productList, setProductList] = useState<Array<ProductProps>>([]);
   const [changeProduct, setChangeProduct] = useState<ProductProps>();

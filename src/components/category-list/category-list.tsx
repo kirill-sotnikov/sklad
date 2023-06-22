@@ -4,6 +4,9 @@ import { Button } from "../button/button";
 import { Category } from "../category/category";
 import style from "./category-list.module.css";
 
+/**
+ * Список категорий, который находится слева
+ */
 export const CategoryList = () => {
   const router = useRouter();
   const { value, add, currentCategory, setCurrentCategory, remove } =

@@ -2,6 +2,9 @@ import { useCategoryList } from "../../../use-category-list";
 import { ProductList } from "../product-list/product-list";
 import style from "./content.module.css";
 
+/**
+ * Место для контента, в нем отображаются товары
+ */
 export const Content = () => {
   const { currentCategory } = useCategoryList();
   return (

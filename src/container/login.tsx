@@ -1,6 +1,9 @@
 import { useRouter } from "next/router";
 import { Button } from "../components/button/button";
 
+/**
+ * Страница авторизации
+ */
 export const Login = () => {
   const route = useRouter();
   return (

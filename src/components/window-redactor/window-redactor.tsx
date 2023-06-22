@@ -11,6 +11,9 @@ interface WindowRedactorProps {
   onSubmit: (element: HTMLFormElement) => void;
 }
 
+/**
+ * Окно, которое появляется при нажатии на кнопку редактировать
+ */
 export const WindowRedactor = memo<WindowRedactorProps>(
   ({ name, SKU, price, cost, onClose, onSubmit: onAdd }) => {
     return (

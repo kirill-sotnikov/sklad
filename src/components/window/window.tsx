@@ -7,6 +7,9 @@ interface WindowProps {
   onAdd: (element: HTMLFormElement) => void;
 }
 
+/**
+ * Окно, которое появляется при нажатии на кнопку добавить продукт
+ */
 export const Window = memo<WindowProps>(({ onClose, onAdd }) => {
   return (
     <div

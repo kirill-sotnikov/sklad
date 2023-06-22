@@ -10,6 +10,9 @@ export interface ProductProps {
   onChange: (nameAndSKU: string) => void;
 }
 
+/**
+ * Товар, выглядит как прямоугольник с полями название, SKU, стоимость, себестоимость
+ */
 export const Product = memo<ProductProps>(
   ({ name, SKU, price, cost, onRemove, onChange }) => {
     return (

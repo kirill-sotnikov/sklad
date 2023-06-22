@@ -7,6 +7,9 @@ interface CategoryProps extends ComponentPropsWithoutRef<"button"> {
   onRemove: (category: string) => void;
 }
 
+/**
+ * Кнопка категории, находится в левом меню
+ */
 export const Category = memo<CategoryProps>(
   ({ children, isActive, onRemove, category, ...props }) => {
     return (
